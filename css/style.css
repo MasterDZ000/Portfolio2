@@ -1,0 +1,130 @@
+/*pour appliqué le style sur touts les element*/
+*{
+    /*définit la police de caractères pour tous les éléments de la page*/
+font-family: 'Roboto', sans serif;
+/*définit la marge extérieure de tous les éléments de la page à zéro*/
+margin: 0;
+/*définit le remplissage interne de tous les éléments à zéro*/
+padding: 0;
+/*contrôle le modèle de boîte utilisé pour calculer la largeur et la hauteur totales d'un élément*/
+box-sizing: border-box;
+}
+/*ces styles s'appliquent à toutes les balises <header> */
+header{
+    /*définit la couleur d'arrière-plan de l'élément <header> */
+    background-color: #f7ff3c;
+    /*indique que la largeur de l'élément <header> doit être de 100% de la largeur de son conteneur parent.*/
+    width: 100%;
+    /*signifie que l'en-tête restera fixe à la même position dans la fenêtre du navigateur même lorsque vous faites défiler la page.*/
+    position: fixed;
+    /*signifie que ses enfants (les éléments à l'intérieur de l'en-tête) seront disposés horizontalement.*/
+    display: inline-flex;
+    /*cela placera les éléments à l'intérieur de l'en-tête à l'extrême gauche et à l'extrême droite.*/
+    justify-content: space-between;
+    /*Aligne les éléments enfants de l'élément <header> verticalement au centre*/
+    align-items: center;
+    /*Définit la quantité d'espace autour du contenu de l'en-tête . 10 pixels d'espace en haut et en bas, et 200 pixels à gauche et à droite.*/
+    padding: 10px 200px;
+}
+
+/*loo*/
+.logo{
+    /*pour supprime toute décoration de texte telle que les soulignements ou les barres transversales.*/
+    text-decoration: none;
+    /*pour définit la couleur du texte*/
+    color: #4204fd;
+    /* pour transformé tous les caractères du texte en majuscules.*/
+    text-transform: uppercase;
+    /*pour définit l'épaisseur ou le poids de la police*/
+    font-weight: 700;
+    /*définit la taille de la police à 1.6 fois la taille de la police de base de l'élément parent*/
+    font-size: 1.6em;
+}
+
+/*un sélecteur CSS qui cible les éléments de lien (<a>) qui sont enfants directs d'un élément avec la classe .navigation.*/
+.navigation a{
+    text-decoration: none;
+    color: #4204fd;
+    font-weight: 500;   
+    font-size: 1.1em;    
+    /*définit un espace de remplissage entre son contenu et sa bordure (padding) de 30 pixels sur le côté gauche de l'élément.*/
+    padding-left: 30px;
+}
+
+/*pour modifier la couleur du texte des liens dans une barre de navigation (élément avec la classe .navigation) lorsqu'ils sont survolés par le curseur de la souris, offrant ainsi une rétroaction visuelle à l'utilisateur pour indiquer que les liens sont interactifs.*/
+.navigation a:hover{
+    color: #c019a6;    
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    /*Cela signifie que ces éléments vont occuper toute la largeur disponible de leur conteneur parent.*/
+    width: 100%;
+    /*définit la hauteur minimale de tous les éléments ayant la classe .main à 100% de la hauteur de la fenêtre visible (vh signifie "viewport height"). Cela garantit que ces éléments auront une hauteur minimale de 100% de la hauteur de l'écran, ce qui permet souvent de les faire remplir complètement l'écran, peu importe la taille de la fenêtre du navigateur.*/
+    min-height: 100vh;
+    display: inline-flex;
+    align-items: center;
+    /*définit une image de fond pour ces éléments et l'option "no-repeat" indique que l'image ne doit pas se répéter.*/
+    background: url(/images/jetee-au-bord-lac-hallstatt-autriche.jpg) no-repeat;
+    /*définit la taille de l'image de fond pour couvrir complètement l'élément ".main".*/
+    background-size: cover;
+    /*l'image sera centrée horizontalement et verticalement dans l'élément ".main".*/
+    background-position: center center;
+}
+
+.main h2{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.main h2 span{
+    display: inline-block;
+    margin-top: 20px;
+    color: #4204fd;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 30px;    
+}
+
+.main-btn{
+    color: #4204fd;
+    background-color: #f7ff3c;
+    text-decoration: none;
+    /*définit la taille de police des éléments .main-btn à 1.7 fois la taille de la police de base du document.*/
+    font-size: 1.7em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.3em 0.9em;
+    letter-spacing: 1px;
+    /*définit le rayon de la bordure des coins des éléments .main-btn à 15 pixels, créant ainsi des coins arrondis.*/
+    border-radius: 15px;
+    /*définit la marge en bas des éléments .main-btn à 50 pixels.*/
+    margin-bottom: 50px;
+}
+
+/*indique que ces styles s'appliquent à tous les éléments ayant la classe .main-btn lorsqu'ils sont survolés par la souris.*/
+.main-btn:hover{
+    /* définit la couleur d'arrière-plan des éléments .main-btn lorsqu'ils sont survolés par la souris*/
+    background-color: #979b23;
+    /*signifie que les éléments seront agrandis de 10% par rapport à leur taille normale lorsqu'ils sont survolés.*/
+    transform: scale(1.1);
+}
+
+.social-icons a{
+    /*color: #fff;*/
+    font-size: 2.5em;
+    padding-right: 8px;
+}
+
