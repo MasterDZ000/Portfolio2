@@ -29,20 +29,6 @@ header{
     padding: 10px 200px;
 }
 
-/*logo*/
-.logo{
-    
-    /*pour supprime toute décoration de texte telle que les soulignements ou les barres transversales.*/
-    text-decoration: none;
-    /*pour définit la couleur du texte*/
-    color: #4204fd;
-    /* pour transformé tous les caractères du texte en majuscules.*/
-    text-transform: uppercase;
-    /*pour définit l'épaisseur ou le poids de la police*/
-    font-weight: 700;
-    /*définit la taille de la police à 1.6 fois la taille de la police de base de l'élément parent*/
-    font-size: 1.6em;
-}
 .imgLogo{
     max-width: 100%;
     width: 100px;
@@ -131,34 +117,16 @@ section{
     transform: scale(1.1);
 }
 
-.about{
-    /* min-height: 100vh;
-    height: 100%;
-    width: 100%;
-    background: url(/images/background.jpg);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    align-items: center;
-    grid-gap: 3rem; */
-     /*Cela signifie que ces éléments vont occuper toute la largeur disponible de leur conteneur parent.*/
-     width: 100%;
-     /*définit la hauteur minimale de tous les éléments ayant la classe .main à 100% de la hauteur de la fenêtre visible (vh signifie "viewport height"). Cela garantit que ces éléments auront une hauteur minimale de 100% de la hauteur de l'écran, ce qui permet souvent de les faire remplir complètement l'écran, peu importe la taille de la fenêtre du navigateur.*/
-     min-height: 100vh;
-     display: inline-flex;
+.about{    
+     display: grid;
+     background: black;     
+     background-size: cover;     
+     grid-template-columns: repeat(2, 1fr);
      align-items: center;
-     /*définit une image de fond pour ces éléments et l'option "no-repeat" indique que l'image ne doit pas se répéter.*/
-     background: url(/images/background.jpg) no-repeat;
-     /*définit la taille de l'image de fond pour couvrir complètement l'élément ".main".*/
-     background-size: cover;
-     /*l'image sera centrée horizontalement et verticalement dans l'élément ".main".*/
-     background-position: center center;
-     align-items: center;
-     grid-gap: 3rem;
+     gap: 1.5rem;
 }
 .social-icons a{
+    color: #fff;
     width: 35px;
     height: 35px;
     font-size: 2.5em;
@@ -169,14 +137,27 @@ section{
     margin-bottom: 30px;
 }
 
-.social-icons a:hover{
+.social-icons a:hover{    
+    color: #c019a6;    
     transform: scale(1.1);
-    color: #c019a6
 }
 
-.description{
-    margin-top: 20px;
+.about h2{
+    margin-top: 5px;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 500;    
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-top: 90px;  
+}
+
+.about h2 span{
     color: #4204fd;
+}
+.about h3{
+    margin-top: 20px;
+    color: #fff;
     font-size: 1.5em;
     font-weight: 500;    
     letter-spacing: 1px;
@@ -184,9 +165,17 @@ section{
     padding-top: 200px;    
 }
 
+.about h3 span{
+    font-size: 35px;
+    font-weight: 700;
+    color: #4204fd;
+}
 .aboutImg{
-    max-height: 100%;
-    width: 400px;
+    padding-bottom: 5%;
+    max-width: 500px;
+    
+    width: 100%;
     height: auto;
+    border-radius: 50%;
     
 }
